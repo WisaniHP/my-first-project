@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+import 'package:login_page/pages/confirm.dart';
+
+class SendButton extends StatelessWidget{
+  final Function()? onTap;
+  void signUp(){}
+  const SendButton({super.key,required this.onTap});
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+        onTap: (){
+          confirm();
+        },
+        child: Container(
+          padding: EdgeInsets.all(25),
+          margin: EdgeInsets.symmetric(horizontal: 25),
+          decoration: BoxDecoration(color: Colors.blue,
+              borderRadius: BorderRadius.circular(8)),
+          child: const Center(
+            child:  Text(
+              'Send',
+              style: TextStyle(
+                  color:  Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16
+              ),
+
+            ),
+          ),
+        )
+    );
+
+  }
+
+
+
+}
