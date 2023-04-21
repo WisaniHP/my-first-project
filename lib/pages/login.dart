@@ -8,6 +8,7 @@ import 'package:login_page/pages/register.dart';
 import 'package:login_page/services/auth_service.dart';
 import 'forgot_pswd.dart';
 //import 'package:login_page/Fields/signUpButton.dart';
+import 'package:login_page/pages/home.dart';
 
 
 class LogInPage extends StatefulWidget{
@@ -26,7 +27,9 @@ class _LogInPageState extends State<LogInPage> {
   void signIn()async {
     showDialog(context: context, builder: (context) {
       return const Center(
-        child: CircularProgressIndicator(),
+        child: CircularProgressIndicator(
+
+        ),
       );
     });
     try {

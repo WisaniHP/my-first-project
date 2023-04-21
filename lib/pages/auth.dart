@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:login_page/pages/home.dart';
 import 'package:login_page/pages/login.dart';
+import 'package:login_page/pages/NavBar.dart';
 
 class AuthP extends StatelessWidget{
   const AuthP({super.key});
@@ -13,7 +14,7 @@ class AuthP extends StatelessWidget{
         builder: (context,snapshot){
         // user looged in
           if(snapshot.hasData){
-            return HomePage();
+            return NavBar();
           }
           else{
             return LogInPage();
