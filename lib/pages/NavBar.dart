@@ -120,23 +120,6 @@ class _NavBarState extends State<NavBar> {
             ],
           ),
         ),
-        // MaterialButton(onPressed: (){
-        //   minWidth:40;
-        //   setState((){
-        //     currentScreen = Bar();
-        //     currentTab = 4;
-        //   });
-        // },
-        //   child: Column(
-        //     mainAxisAlignment: MainAxisAlignment.center,
-        //     children: [
-        //       Icon(Icons.settings,color: currentTab ==0 ?Colors.blue :Colors.grey,
-        //       ),
-        //       Text('Settings',
-        //         style: TextStyle(color: currentTab==0 ? Colors.blue : Colors.grey) ,)
-        //     ],
-        //   ),
-        // )
       ],)
 
 
